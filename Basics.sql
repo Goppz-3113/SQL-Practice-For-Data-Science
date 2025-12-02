@@ -48,6 +48,10 @@ SELECT AVG(marks)         #Average marks of 20 year olds
 FROM students
 WHERE age = 20;
 
+SELECT DISTINCT age   # show only unique ages for example If 10 students are 20 years old, it will show 20 only once.
+FROM students;
+
+
 
 
 
