@@ -19,4 +19,35 @@ SELECT age, COUNT(*)               #Number of students in each age group
 FROM students
 GROUP BY age;
 
+SELECT MAX(marks) FROM students;    # Find the highest marks
+
+SELECT MIN(marks) FROM students;     # Find the lowest marks
+
+SELECT age, AVG(marks)           #Average marks for each age group
+FROM students
+GROUP BY age;
+
+SELECT * FROM students          #Female students only
+WHERE gender = 'F';
+
+
+SELECT * FROM students        #Students who scored below 70
+WHERE marks < 70;
+
+SELECT * FROM students       #Top 3 students by marks
+ORDER BY marks DESC
+LIMIT 3;
+
+
+SELECT gender, COUNT(*)    #Count number of male and female students
+FROM students
+GROUP BY gender;
+
+
+SELECT AVG(marks)         #Average marks of 20 year olds
+FROM students
+WHERE age = 20;
+
+
+
 
