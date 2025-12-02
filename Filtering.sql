@@ -26,3 +26,9 @@ WHERE name LIKE '%a';
 SELECT * FROM students
 WHERE name LIKE '%a%';     # text that containing the letter "a"
 
+SELECT age, AVG(marks)   # we cant use where with grouped data so we use having
+FROM students
+GROUP BY age
+HAVING AVG(marks) > 80;
+
+
