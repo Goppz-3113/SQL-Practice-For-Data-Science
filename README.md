@@ -1,93 +1,113 @@
-# SQL-Practice-For-Data-Science
-Welcome to my SQL Learning Repository, where I document my journey from zero SQL experience to mastering real-world SQL used in Data Science, Analytics, and Engineering roles.
 
-This repository contains structured learning files, mini-projects, and weekly SQL exercises.
+# 📘 Student Report System – SQL Mini Project
 
-##🎯 Purpose of This Repository
+This project is part of my SQL learning journey and focuses on mastering SQL fundamentals used in real Data Science & Analytics roles.  
+It includes database creation, inserting data, and writing queries involving **JOINs, GROUP BY, subqueries, and CASE WHEN**.
 
-Build strong SQL foundations
+---
 
-Practice interview-style SQL problems
+# 🔥 Why This Project?
 
-Document my learning publicly
+- Builds strong SQL foundations  
+- Demonstrates real analytical thinking  
+- Perfect for interviews (Joins + Group By + Subqueries)  
+- Easy to extend later  
+- Great addition to a GitHub portfolio  
 
-Showcase real project work
+---
 
-Improve data thinking & querying skills  
+## 📂 Project Structure
 
+```
 
-##🧩 What I Learn in Each File
-🔹 basics.sql
-SELECT
+Student-Report-System/
+│
+├── create_tables.sql
+├── insert_data.sql
+├── queries.sql
+└── README.md
 
-WHERE
+````
 
-ORDER BY
+---
 
-LIMIT
+## 🧱 1. `create_tables.sql`
 
-##🔹 filtering.sql
-AND / OR
+Creates four tables:
 
-BETWEEN
+| Table      | Purpose              |
+|------------|--------------------|
+| students   | Student info       |
+| marks      | Exam marks         |
+| courses    | Courses enrolled   |
+| attendance | Attendance summary |
 
-LIKE
+---
 
-IN
+## 📝 2. `insert_data.sql`
 
-##🔹 grouping.sql
-GROUP BY
+Contains sample data for 5 students, their marks, courses, and attendance.
 
-HAVING
+---
 
-Aggregate functions
+## 🔍 3. `queries.sql`
 
-##🔹 joins.sql
-INNER JOIN
+Includes 10 analytical SQL queries showcasing:
 
-LEFT JOIN
+### ✔ JOINs  
+INNER JOIN between students, marks, attendance, and courses.
 
-Multi-table joins
+### ✔ Filtering  
+`WHERE`, `BETWEEN`, `LIKE`, `IN`.
 
-##🔹 subqueries.sql
-Subqueries in WHERE
+### ✔ Grouping  
+`GROUP BY` + aggregate functions (`AVG()`, `SUM()`, `MAX()`).
 
-Subqueries in SELECT
+### ✔ Subqueries  
+Finding students above average marks.
 
-Correlated vs non-correlated
+### ✔ CASE Expressions  
+Creating categories like:  
+- Pass / Fail  
+- Attendance Rating  
+- Age Groups  
 
-##🔹 case_when.sql
-Creating categories
+---
 
-Pass/Fail logic
+## 🔎 Example Query: Course-wise Average Marks
 
-Conditional labels
+```sql
+SELECT courses.course, AVG(marks.marks) AS avg_marks
+FROM students
+JOIN marks ON students.id = marks.student_id
+JOIN courses ON students.id = courses.student_id
+GROUP BY courses.course;
+````
 
-##🧪 Projects Included
-1️⃣ Student Report System
-A mini SQL project involving:
+---
 
-Multiple tables
+## 🎯 Skills Demonstrated
 
-JOIN operations
+* SQL basics (`SELECT`, `WHERE`, `ORDER BY`)
+* Aggregate functions
+* JOINs (very important for DS jobs)
+* Subqueries
+* CASE WHEN logic
+* Analytical problem solving
 
-Subqueries
+---
 
-CASE WHEN
+## 🚀 Future Improvements
 
-Analytical queries
+* Add more students
+* Add department table
+* Add stored procedures
+* Add SQL performance optimization
 
-More projects will be added weekly.
+---
 
-##🚀 Future Plans
-Add an E-commerce SQL Project
+## 💡 Goal
 
-Add 100 SQL questions for practice
-
-Add LeetCode-style SQL solutions
-
-Add advanced SQL (CTEs, windows functions)
-
-##📌 Goal
-To become job-ready in SQL and build a strong GitHub presence showing analytical thinking and consistent practice.
+This project is part of my SQL learning roadmap and will be updated weekly.
+It helps me practice SQL concepts and build a solid GitHub portfolio.
 
