@@ -3,7 +3,7 @@ Welcome to my SQL Learning Repository, where I document my journey from zero SQL
 
 This repository contains structured learning files, mini-projects, and weekly SQL exercises.
 
-🎯 Purpose of This Repository
+##🎯 Purpose of This Repository
 
 Build strong SQL foundations
 
@@ -16,7 +16,7 @@ Showcase real project work
 Improve data thinking & querying skills  
 
 
-🧩 What I Learn in Each File
+##🧩 What I Learn in Each File
 🔹 basics.sql
 SELECT
 
@@ -26,7 +26,7 @@ ORDER BY
 
 LIMIT
 
-🔹 filtering.sql
+##🔹 filtering.sql
 AND / OR
 
 BETWEEN
@@ -35,35 +35,35 @@ LIKE
 
 IN
 
-🔹 grouping.sql
+##🔹 grouping.sql
 GROUP BY
 
 HAVING
 
 Aggregate functions
 
-🔹 joins.sql
+##🔹 joins.sql
 INNER JOIN
 
 LEFT JOIN
 
 Multi-table joins
 
-🔹 subqueries.sql
+##🔹 subqueries.sql
 Subqueries in WHERE
 
 Subqueries in SELECT
 
 Correlated vs non-correlated
 
-🔹 case_when.sql
+##🔹 case_when.sql
 Creating categories
 
 Pass/Fail logic
 
 Conditional labels
 
-🧪 Projects Included
+##🧪 Projects Included
 1️⃣ Student Report System
 A mini SQL project involving:
 
@@ -79,7 +79,7 @@ Analytical queries
 
 More projects will be added weekly.
 
-🚀 Future Plans
+##🚀 Future Plans
 Add an E-commerce SQL Project
 
 Add 100 SQL questions for practice
@@ -88,6 +88,6 @@ Add LeetCode-style SQL solutions
 
 Add advanced SQL (CTEs, windows functions)
 
-📌 Goal
+##📌 Goal
 To become job-ready in SQL and build a strong GitHub presence showing analytical thinking and consistent practice.
 
